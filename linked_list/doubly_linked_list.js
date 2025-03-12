@@ -147,7 +147,7 @@ class DoublyLinkedList {
         return temp
     }
 
-	swapFirstLast() {
+    swapFirstLast() {
         if (this.length === 0) return undefined
 
         let temphead = this.head.value
@@ -157,7 +157,7 @@ class DoublyLinkedList {
         this.tail.value = temphead
     }
 
-	reverse() {
+    reverse() {
         if (this.length === 0) return undefined
 
         let temp = this.head
@@ -174,7 +174,7 @@ class DoublyLinkedList {
         return this
     }
 
-	isPalindrome() {
+    isPalindrome() {
         if (this.length < 2) return true
 
         let start = this.head
