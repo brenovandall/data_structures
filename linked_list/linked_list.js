@@ -153,7 +153,7 @@ class LinkedList {
         return this
     }
 
-	findMiddleNode() {
+    findMiddleNode() {
         if (this.head === null) return null
 
         let length = 0;
@@ -175,7 +175,7 @@ class LinkedList {
         return middle
     }
 
-	hasLoop() {
+    hasLoop() {
         let slow = this.head
         let fast = this.head
 
@@ -189,7 +189,7 @@ class LinkedList {
         return false
     }
 
-	findKthFromEnd(k) {
+    findKthFromEnd(k) {
         let temp = this.head
         let pointer = this.head
 
@@ -206,25 +206,25 @@ class LinkedList {
         return pointer
     }
 
-	removeDuplicates() {
-		let values = new Set()
+    removeDuplicates() {
+	let values = new Set()
         let prev = null
-		let current = this.head
+	let current = this.head
 
-		while (current !== null) {
-			if (values.has(current.value)) {
-				prev.next = current.next
-				this.length--
-			}
-			else {
-				values.add(current.value)
-				prev = current
-			}
-			current = current.next
+	while (current !== null) {
+		if (values.has(current.value)) {
+			prev.next = current.next
+			this.length--
 		}
+		else {
+			values.add(current.value)
+			prev = current
+		}
+		current = current.next
+	}
   }
 
-	binaryToDecimal() {
+    binaryToDecimal() {
         let num = 0;
         let temp = this.head
 
